@@ -28,12 +28,9 @@ export function Home() {
           style={{ height: "500px" }}
         >
           <FormGroup>
+            <span>Configurações de trabalho</span>
             <FormControlLabel control={<Checkbox />} label="Ativar horario de trabalho" />
-            
-            <div className="selectContainer">
-              <span>Configurações de trabalho</span>
-              <SelectContent />
-            </div>
+            <SelectContent />
             <DayOfTheWeek />
 
             <ButtonContent>Enviar</ButtonContent>
