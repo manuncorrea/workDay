@@ -16,9 +16,10 @@ export default function DayOfTheWeek() {
     console.log('aaaa', event.target.value); //valor dentro do value
     console.log('bbbb', event.target.checked); // false ou true
 
-    const isCheckedItem = hours.includes(event.target.value)
+    const isCheckedItem = hours.includes(event.target.value as never)
 
     if(!isCheckedItem) {
+      //@ts-ignore
       setHours((hours) => [
         ...hours,
         event.target.value
