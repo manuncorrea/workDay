@@ -11,10 +11,6 @@ import { ButtonContent } from '../../components/Button';
 import DayOfTheWeek from '../../components/DayOfTheWeek';
 import { SelectContent } from '../../components/SelectContent';
 
-
-import "./styles.css";
-
-
 export function Home() {
   function handleSubmit() { }
   return (
